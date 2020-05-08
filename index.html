@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<title>Say Roro | Welcome</title>
+	<meta name="description" content="Photographer's Website">
+	<meta name="author" content="Say Roro">
+	<meta name="keywords" content="Photo, Models, Fashion, Love, Life, Adventure,">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="CSS/Index.css">
+
+	<script src="https://kit.fontawesome.com/7d306e1f78.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+	<!-- BigSection -->
+	<section id="BigWrapper">
+		<!-- HeaderSection -->
+		<header>
+			<img src="Images/banner1.jpg" alt="" >
+		</header>
+
+		<!-- NavigationbarSection -->
+		<nav id="myTopnav">
+			
+			<ul>
+				<li><a class="navLink" href="">Home</a></li>
+				<li><a class="dropDownList navLink" href="">Portfolio</a>
+				<ul class="dropDown">
+					<li><a class="navLink" href="">Fashion</a></li>
+					<li><a class="navLink" href="">Love</a></li>
+					<li><a class="navLink" href="">Life</a></li>
+					<li><a class="navLink" href="">Adventure</a></li>
+				</ul>
+				</li>
+				<li><a class="dropDownList navLink" href="">Model</a>
+				<ul class="dropDown">
+					<li><a class="navLink" href="">Men</a></li>
+					<li><a class="navLink" href="">Women</a></li>
+				</ul>
+				</li>
+				<li><a class="navLink" href="">Session</a></li>
+				<li><a class="navLink" href="">About</a></li>
+				<li><a class="navLink" href="">Contact</a></li>
+			</ul>
+			  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			    <i class="fa fa-bars fa-2x"></i>
+			  </a>
+		</nav>
+		<!-- TopSection -->
+		<section id="TopSection">
+
+			<div id="FasionLove">
+				<div class="leftDiv Presentation">
+					<img src="Images/Fashion.jpg" alt="Fashion">
+					<div class="Description">
+						<p>Fashion</p>
+					</div>
+				</div>
+
+				<div class="Presentation">
+					<img src="Images/Love.jpg" alt="Love">
+					<div class="Description">
+						<p>Love</p>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		
+		<!-- BottomSection -->
+		<section id="BottomSection">
+
+			<div id="LifeAdventure">
+				<div class="leftDiv Presentation">
+					<img src="Images/Life.jpeg" alt="Life">
+					<div class="Description">
+						<p>Life</p>
+					</div>
+				</div>
+
+				<div class="Presentation">
+					<img src="Images/Adventure.jpg" alt="Adventure">
+					<div class="Description">
+						<p>Adventure</p>
+					</div>
+				</div>
+			</div>
+
+		</section>
+	<!-- PageFooter -->
+	<footer id="Footer">
+		<i class="icon fab fa-facebook-square fa-2x"></i>
+		<i class="icon fab fa-instagram fa-2x"></i>
+		<i class="icon fab fa-twitter-square fa-2x"></i>
+		<i class="icon fas fa-envelope fa-2x"></i>
+		<p>© Copyright 2019 Say Roro Graphic Design</p>
+	</footer>
+
+	</section>
+	<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</body>
+</html>

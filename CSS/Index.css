@@ -1,0 +1,294 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: #f1d6ab;
+}
+
+#BigWrapper{
+	text-align: center;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+header{
+	height: 300px;
+	background-color: #23374d;
+}
+nav{
+	position: sticky;
+	top: 0px;
+	text-align: center;
+	background-color: #da9833;
+	height: 37px;
+}
+
+nav ul{
+	list-style-type: none;
+	display: inline-block;
+}
+
+nav ul li{
+	float: left;
+	border-right: 1px solid #f1d6ab;
+	position: relative;
+}
+
+nav ul li:last-child {
+	border-right: none;
+}
+
+nav ul li > ul{
+	position: absolute;
+	left: 0px;
+	top: 37px;
+	background-color:  #da9833;
+	display: none;
+	
+}
+nav ul li > ul li{
+
+	border-top: 1px solid #f1d6ab;
+	border-right: none;
+}
+nav ul li:hover > ul{
+	display: block;
+}
+nav .icon{
+	display: none;
+}
+.navLink{
+	display: block;
+	text-decoration: none;
+	width: 100px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	padding: 7px 0px;
+}
+
+.navLink:hover{
+	padding: 7px 0px;
+	background-color: #f1d6ab;
+	color: #ff0000;
+}
+
+nav h1{
+	display:none;
+}
+/*.dropDown{
+	display: none;
+}
+
+
+.dropDownList:hover .dropDown{
+	display: block;
+}*/
+/*
+.dropDown a{
+	display: block;
+}*/
+
+#TopSection{
+	width: 75%;
+	margin: 30px auto;
+	overflow: hidden;
+}
+
+#BottomSection{
+	width: 75%;
+	margin: 30px auto;
+	overflow: hidden;
+
+}
+
+#TopSection .Presentation{
+	width: 48%;
+	float: left;
+	height: 400px;
+	overflow: hidden;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Description{
+	padding:3px 0;
+	text-align: center;
+	color: #ff0000;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.leftDiv{
+	margin-right: 4%;
+}
+
+#BottomSection .Presentation{
+	width: 48%;
+	float: left;
+	height: 400px;
+	overflow: hidden;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+img{
+	width: 100%;
+	height: 350px;
+
+}
+header img{
+	height:300px;
+}
+
+.icon{
+	padding-left: 0.5%;
+}
+
+.icon:hover{
+	color: #ff0000;
+}
+
+footer{
+	text-align: center;
+	height: 30%;
+	background-color: #da9833;
+	color: white;
+	padding: 3.5%;
+}
+@media only screen and (max-width: 900px) {
+#TopSection{
+	width: 90%;
+	margin: 30px auto;
+	overflow: hidden;
+}
+
+#BottomSection{
+	width: 90%;
+	margin: 30px auto;
+	overflow: hidden;
+
+}
+footer{
+	height: 100px;
+	padding: 3.5%;
+}
+}
+
+@media only screen and (max-width: 630px) {
+	
+	header{
+	height: 200px;
+	}
+	
+
+	header img{
+	height:200px;
+	}
+
+	nav{
+	position: relative;
+	background-color: white;
+	}
+
+	nav ul li{
+	float: none;
+	border-right: none;
+	position: relative;
+}
+nav li{
+	position: absolute;
+	top: 38px;
+}
+nav ul{
+	display: block;
+}
+nav ul li > ul{
+	position: static;
+	display: none;
+}
+
+nav ul li > ul .navLink{
+	background-color:  #f1d6ab;
+}
+nav ul li > ul .navLink:hover{
+	background-color:  #da9833;
+}
+
+.navLink{
+	display: block;
+	width: 100%;
+	background-color: #da9833;
+	border:1px solid #da9833;
+	border-bottom: 1px solid #f1d6ab;
+}
+
+#TopSection{
+	width: 75%;
+}
+	#TopSection .Presentation{
+	width: 100%;
+	height: 350px;
+	overflow: hidden;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+	.leftDiv{
+	margin-bottom: 8%;
+}
+
+#BottomSection{
+	width: 75%;
+}
+img{
+	width: 100%;
+	height: 300px;
+
+}
+	#BottomSection .Presentation{
+	width: 100%;
+	height: 350px;
+	overflow: hidden;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer{
+	height: 100px;
+	padding: 5%;
+}
+	
+
+/*.topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }*/
+
+}
+/*@media only screen and  (max-width: 630px) {
+  .topnav a {display: none;}
+
+  nav a.icon {
+    float: right;
+    display: block;
+    padding:0.6% 0.5%;
+    color: white;
+  }
+  nav h1{
+	display:inline;
+	float: left;
+	padding:0.6% 0.5%;
+	color: white;
+	margin-left: 45%;
+}
+li .centerlink1{
+	margin-top: 5% 0 0 0;
+	text-align: center;
+}
+}*/
